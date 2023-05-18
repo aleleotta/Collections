@@ -1,6 +1,7 @@
 package exercise1;
 
-public class Functions {
+public class Collection {
+	
 }
 
 /*
