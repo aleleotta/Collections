@@ -3,6 +3,8 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
+		int num = 0;
+		ArrayList<Integer> list;
 		Scanner sc = new Scanner(System.in);
 		sc.close();
 	}
