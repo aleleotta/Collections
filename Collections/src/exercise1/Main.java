@@ -1,11 +1,21 @@
 package exercise1;
 import java.util.*;
+import java.lang.*;
 
 public class Main {
 	public static void main(String[] args) {
 		int num = 0;
-		ArrayList<Integer> list;
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		Scanner sc = new Scanner(System.in);
+		for(int i = 0; i < 20; i++) {
+			num = (int) (Math.random() * 100);
+			list.add(num);
+		}
+		Collections.sort(list);
+		System.out.print("List: ");
+		for(int numRead: list) {
+			System.out.print(" " + numRead);
+		}
 		sc.close();
 	}
 }
