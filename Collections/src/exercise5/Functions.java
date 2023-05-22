@@ -8,7 +8,7 @@ public class Functions {
 		System.out.println("2) Delete product");
 		System.out.println("3) Read list");
 		System.out.println("0) Exit");
-		System.out.println("\n");
+		System.out.println();
 		System.out.println("Option: ");
 	}
 }

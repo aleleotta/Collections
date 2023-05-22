@@ -49,6 +49,7 @@ public class Main {
 				}
 				break;
 			case 0: //EXIT
+				System.out.println("\n\nProgram terminated.");
 				break;
 			default: //ERROR
 				System.out.println("The following option is invalid!");
