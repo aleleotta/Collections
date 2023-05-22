@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 	public static void main(String[] args) {
 		String word = "";
-		ArrayList<String> list = new ArrayList<String>();
+		HashSet<String> list = new HashSet<String>();
 		Scanner sc = new Scanner(System.in);
 		while(!(word.equalsIgnoreCase("end"))) {
 			System.out.print("\nIntroduce a word: ");
@@ -13,7 +13,6 @@ public class Main {
 				list.add(word);
 			}
 		}
-		Collections.sort(list);
 		System.out.print("List: ");
 		for(String readWord: list) {
 			System.out.print(" " + readWord);
