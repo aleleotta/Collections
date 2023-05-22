@@ -1,6 +1,16 @@
 package exercise5;
 
 public class Functions {
+	
+	public static void menu() {
+		System.out.println("PRODUCTS");
+		System.out.println("1) Insert product");
+		System.out.println("2) Delete product");
+		System.out.println("3) Read list");
+		System.out.println("0) Exit");
+		System.out.println("\n");
+		System.out.println("Option: ");
+	}
 }
 
 /*
