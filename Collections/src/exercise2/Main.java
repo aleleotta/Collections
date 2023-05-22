@@ -3,7 +3,21 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
+		String word = "";
+		ArrayList<String> list = new ArrayList<String>();
 		Scanner sc = new Scanner(System.in);
+		while(!(word.equalsIgnoreCase("end"))) {
+			System.out.print("\nIntroduce a word: ");
+			word = sc.nextLine();
+			if(!(word.equalsIgnoreCase("end"))) {
+				list.add(word);
+			}
+		}
+		Collections.sort(list);
+		System.out.print("List: ");
+		for(String readWord: list) {
+			System.out.print(" " + readWord);
+		}
 		sc.close();
 	}
 }
