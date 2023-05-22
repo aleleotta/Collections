@@ -21,17 +21,32 @@ public class Main {
 				sc.nextLine();
 				if(!(map.containsKey(productName))) {
 					map.put(productName, price);
+					for(HashMap.Entry<String, Double> productRead: map.entrySet()) {
+						System.out.println("\nProduct: " + productRead.getKey());
+						System.out.println("Price: " + productRead.getValue() + "\n");
+					}
 				} else {
-					System.out.println("The following product is already available within the list.");
+					System.out.println("\nThe following product is already available within the list.\n");
 				}
 				break;
 			case 2: //DELETE
 				System.out.print("Introduce the name of the product that you would like to delete: ");
 				productName = sc.nextLine();
-				map.remove(productName);
+				if(map.containsKey(productName)) {
+					map.remove(productName);
+					for(HashMap.Entry<String, Double> productRead: map.entrySet()) {
+						System.out.println("\nProduct: " + productRead.getKey());
+						System.out.println("Price: " + productRead.getValue() + "\n");
+					}
+				} else {
+					System.out.println("\nThe following product doesn't exist within the list.\n");
+				}
 				break;
 			case 3: //READ
-				System.out.println(map);
+				for(HashMap.Entry<String, Double> productRead: map.entrySet()) {
+					System.out.println("\nProduct: " + productRead.getKey());
+					System.out.println("Price: " + productRead.getValue() + "\n");
+				}
 				break;
 			case 0: //EXIT
 				break;
